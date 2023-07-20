@@ -4,22 +4,20 @@ package com.octanner.interview.darkwizard;
 import java.util.List;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
 import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.context.annotation.Import;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @JdbcTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
+@Import(WizardDaoImpl.class)
 class WizardDaoTest {
 
-  @Autowired NamedParameterJdbcTemplate jdbcTemplate;
-
-  @InjectMocks WizardDaoImpl wizardDao;
+  @Autowired WizardDaoImpl wizardDao;
 
   @Test
   @DisplayName("Count of wizards that use unforgivable curses")
