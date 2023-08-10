@@ -39,4 +39,4 @@ Implement the `WizardResultData` class should include:
 
 This is the database schema
 
-![Schema](diagrams/images/schema.svg)
+![Schema](diagrams/images/schema.png)
