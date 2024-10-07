@@ -10,12 +10,14 @@ that used unforgivable curses AND the number of times they cast the spells. Use 
 parse out the results and return the appropriate object.
 
 The SQL should return:
+
 - list of wizards who cast the spells: 'Avada Kedavra', 'Imperio' & 'Crucio'
 - two columns in the result set called `wizard_name` & `spell_cast_count`
 - ordered by wizards who cast the most unforgivable spells first
 
 Implement the `WizardResultData` class and use the `resultSet` to populate the list of dark wizards.
 Implement the `WizardResultData` class should include:
+
 - Two fields called `wizardName` & `spellCastCount`
 - A constructor that accepts both `wizardName` & `spellCastCount` as parameters
 - Getters and setters for `wizardName` and `spellCastCount`
@@ -25,7 +27,7 @@ Implement the `WizardResultData` class should include:
 1. Make sure you have java and docker installed. You can use your preferred IDE or editor.
 2. Start the postgres database using docker-compose
 
-`docker-compose up -d db`
+`docker compose up -d db`
 
 3. Run the flyway migrations to create the database schema
 
