@@ -1,5 +1,18 @@
 # Instructions
 
+Please read the following instructions carefully.
+
+- Make a fork of this repo and commit your changes to your fork.
+- Do your work in a feature branch, and when you are done, create a pull request back to the main repo.
+- Once you have created the pull request, please submit a link to your repo and pull request to your point of contact.
+- Make sure that your repo is public.
+- We will review your code and reach back out with next steps if the team is satisfied with your submission.
+- Use whatever tools you feel are necessary to complete the task.
+- Structure your code in a way that makes sense to you and manage your commits however you see fit.
+- Please be ready to discuss your code and thought process. Also be prepared to demo all the functionality you have built.
+
+# Setting
+
 Dear Muggle,
 The Ministry of Magic has been secretly tracking all magical spells cast by the wizarding community.
 Now that the Aurors have this spell-casting event log, they need you to help them catch some dark wizards!
